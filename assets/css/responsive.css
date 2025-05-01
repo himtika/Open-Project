@@ -1,22 +1,131 @@
 @media only screen and (max-width: 1023px) {
-  
-  .hero-city img {
-    transform: scale(1.2);
-  }
-
-
-  .gtk-container .cloud-right {
-    flex: 1;
-    mix-blend-mode: multiply;
+  /* =============== section Hero ================ */
+  .hero {
+    min-height: 100vh;
+    height: 130vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70vh;
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(180deg, #90BAFF 0%, #D2E3FF 100%);
   }
 
-  .gtk-city {
+  .hero-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: scale(1.2);
+    margin: 0;
+    position: relative;
+    z-index: 2;
+  }
+
+  .cloud-left {
+    position: absolute;
+    width: 35%;
+    z-index: 1;
+    inset: -20vw 0 0 0;
+  }
+  
+  .cloud-right img {
+    clip-path: inset(0 50% 0 0);
+  }
+
+  .cloud-right {
+    position: absolute;
+    width: 35%;
+    z-index: 1;
+    transform: translate(90%, -65%);
+  }
+
+  .hero-city {
+    position: absolute;
+    bottom: 0;
+    width: 200%;
+    z-index: 1;
+  }
+
+  .hero-city img {
+    width: 150%;
     transform: translateY(10%);
   }
+
+  .hero-text {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    padding-top: 150px;
+  }
+
+  .hero-text h1 {
+    font-size: clamp(2.5rem, 10vw, 5rem);
+    text-shadow: 0px 4px 4px #224F89;
+    margin-bottom: 1rem;
+  }
+
+  .hero-text button {
+    margin-top: 10px;
+    padding: 12px 24px;
+    font-size: 18px;
+    border-radius: 12px;
+  }
+
+  /* =============== section GTK ================ */
+.gtk {
+  position: relative;
+  padding-top: 150px; /* beri jarak aman dari hero */
+  z-index: 2;
+  overflow: hidden;
+}
+
+.gtk-container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0; /* hilangkan margin negatif */
+  padding: 0 20px;
+}
+
+.gtk-text {
+  z-index: 3;
+  position: relative;
+  padding: 0 10px;
+}
+
+.gtk h1 {
+  font-size: clamp(2rem, 6vw, 3rem);
+  margin-bottom: 1rem;
+}
+
+.gtk h3 {
+  font-size: clamp(0.9rem, 4vw, 1.1rem);
+  line-height: 1.4;
+}
+
+.gtk-city {
+  position: relative;
+  width: 200%;
+  margin-top: 40vw;
+  padding-left: 30vw;
+  z-index: 1;
+  bottom: 0;
+}
+
+.gtk-city img {
+  width: 150%;
+  height: auto;
+  object-fit: cover;
+}
+
+.benefit-city {
+  position: relative;
+  bottom: 0;
+  width: 150%;
+  z-index: 1;
+}
+
 
   .benefit-container .cloud-left { 
     height: 32vh;
@@ -58,7 +167,7 @@
   header {
     padding: 0;
     margin: 0;
-    height: 80px;
+    height: 100px;
     width: 100%;
     box-sizing: border-box;
   }
@@ -70,8 +179,12 @@
     justify-content: left;
   }
   
-  .nav-section2 {
-    transform: translateX(40%);
+  .nav-section .logo {
+    padding-left: 10px;
+  }
+
+  .nav-container .logo img{
+    width: 35%;
   }
   
   .menu {
@@ -85,7 +198,7 @@
   #hamburger {
     display: block;
     color: white;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     position: absolute;
     right: 5%;
     left: auto;
@@ -94,7 +207,7 @@
   .menu.show-menu {
     display: block;
     position: absolute;
-    top: 79px;
+    top: 100px;
     left: 0;
     width: 100%;
     background: rgba(39, 68, 93, 0.20);
@@ -139,13 +252,13 @@
 
     /* ================= Section FAQ ================= */
     .faq-container {
-      height: 105vh;
+      height: 500px;
     }
     .faq-wrapper {
       grid-template-columns: 1fr;
-      max-width: 100%;
-      padding: 10px;
-  }
+      max-width: 80%;
+      align-items: center;
+    }
   .faq-heading {
       font-size: 2rem;
       font-weight: 500;
@@ -190,6 +303,32 @@
 
     .gtk-city {
       transform: translateY(20%);
+    }
+
+    /* ================= Section Idea ================= */
+    .content-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .Idea-main-text {
+      text-align: center;
+      max-width: 80%;
+      margin-bottom: 20px;
+    }
+
+    .Idea-image {
+      width: 100%;
+      height: 50vh;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .benefit-city {
+      margin-top: 20px
     }
 
     .wrapper .row{
