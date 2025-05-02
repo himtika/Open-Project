@@ -2,7 +2,7 @@
   /* =============== section Hero ================ */
   .hero {
     min-height: 100vh;
-    height: 130vh;
+    height: 110vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,6 +26,10 @@
     width: 35%;
     z-index: 1;
     inset: -20vw 0 0 0;
+  }
+
+  .cloud-left img {
+    padding-top: 70px;
   }
   
   .cloud-right img {
