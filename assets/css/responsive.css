@@ -190,11 +190,32 @@
   .menu {
     display: none;
   }
-
   .menu ul{
     gap: 0;
   }
-  
+  .Theme .Vector-left, .Idea .Vector-left, .benefit .cloud-right{
+    display: none;
+  }
+
+  .Theme {
+    height: 100vw;
+  }
+  .Theme .theme-details {
+    max-width: 320px;
+  }
+  .content-section {
+    margin: 0;
+  }
+  .content-section .Idea-image {
+    max-width: 320px;
+  }
+  .Documentation {
+    max-height: 550px;
+  }
+  .Documentation .doc-text h1, 
+  .Registration .Regis-container h1 {
+    font-size: 3.5rem;
+  }
   #hamburger {
     display: block;
     color: white;
@@ -250,8 +271,13 @@
       left: -60px;
     }
 
+    .benefit {
+      padding-top: 8rem;
+    }
+
     /* ================= Section FAQ ================= */
     .faq-container {
+      padding-right: 1.5rem;
       height: 500px;
     }
     .faq-wrapper {
@@ -284,14 +310,14 @@
   .footer-text{
     display: flex;
     position: relative;
-    gap: 70px;
-    padding: 20px 0 0 20px;
+    gap: 30px;
+    padding: 20px 0 0 0;
+    margin-left: -20px;
   }
   .logo-section{
     margin-left: 0px;
   }
 }
-  
   @media(max-width: 440px){
     .hero-container {
       margin-top: 17vw;

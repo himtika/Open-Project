@@ -550,13 +550,13 @@ header .nav1 {
   flex-direction: column;
 }
 
-.Theme-container .Vector-left {
+.Theme-container .Vector-left{
   position: absolute;
-  width: 60%;
   height: 80%;
-  clip-path: inset(0 40% 0 0);
   transform: translateX(80%);
+  width: 60%;
   margin-bottom: -18vw;
+  clip-path: inset(0 46% 0 0);
 }
 
 .Theme-container .Vector-right {
@@ -629,7 +629,7 @@ header .nav1 {
   position: absolute;
   width: 60%;
   height: 80%;
-  clip-path: inset(0 40% 0 0);
+  clip-path: inset(0 46% 0 0);
   transform: translateX(80%);
   margin-bottom: -18vw;
 }
