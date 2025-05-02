@@ -193,8 +193,12 @@
   .menu ul{
     gap: 0;
   }
-  .Theme .Vector-left, .Idea .Vector-left, .benefit .cloud-right{
+  .Theme .Vector-left, .Idea .Vector-left, .benefit .cloud-right, .gtk .cloud-right, .gtk .cloud-left {
     display: none;
+  }
+
+  .Theme-container .Vector-right {
+    transform: translate(-80%, 25%);
   }
 
   .Theme {

@@ -719,7 +719,7 @@ header .nav1 {
 .Documentation-container h1 {
   color: #004136;
   font-family: "Plus Jakarta Sans";
-  font-size: 64px;
+  font-size: clamp(2.5rem, 4vw, 4rem);
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -755,6 +755,8 @@ header .nav1 {
   display: flex;
   align-items: center;
   perspective: 100px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10%;
 }
 
 .slide img {
@@ -762,6 +764,7 @@ header .nav1 {
   width: 100%;
   height: auto;
   transition: transform 1s;
+  border-radius: 10%;
 }
 
 .slide img:hover {
