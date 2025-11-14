@@ -682,19 +682,18 @@ header .nav1 {
 
 .Idea-image {
   width: 100%;
-  padding: 50;
-  margin: 20;
-  z-index: 2;
-  background: rgba(0, 0, 0, 0.2);
+  height: 50vh; /* tinggi 50% viewport height */
   border-radius: 10%;
+  overflow: hidden; /* agar gambar tidak keluar dari border */
+  position: relative;
 }
 
 .Idea-image img {
   width: 100%;
-  height: auto;
-  padding: 100;
-  z-index: 2;
-  background-color: gray;
+  height: 100%; 
+  object-fit: cover;
+  object-position: center;
+  display: block;
 }
 
 /* Documentation */
@@ -739,10 +738,9 @@ header .nav1 {
 
 .slide-track {
   display: flex;
-  width: calc(250px * 18);
+  width: calc(250px * 18); /* pastikan ini menutupi seluruh container */
   animation: scroll 40s linear infinite;
   gap: 40px;
-  margin: 0;
 }
 
 .slide-track:hover {
@@ -754,15 +752,17 @@ header .nav1 {
   width: 300px;
   display: flex;
   align-items: center;
+  justify-content: center; 
   perspective: 100px;
   background: rgba(0, 0, 0, 0.2);
   border-radius: 10%;
+  overflow: hidden; 
 }
 
 .slide img {
-  aspect-ratio: 1/1;
   width: 100%;
-  height: auto;
+  height: 100%; 
+  object-fit: cover;
   transition: transform 1s;
   border-radius: 10%;
 }
@@ -789,6 +789,14 @@ header .nav1 {
   right: 0;
   top: 0;
   transform: rotateZ(180deg);
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-50%));
+  }
 }
 
 /* Timeline Registration */

@@ -224,6 +224,13 @@
   .Registration .Regis-container h1 {
     font-size: 3.5rem;
   }
+  .slide {
+    height: 200px;
+    width: 200px;
+  }
+  .slide-track {
+    gap: 20px;
+  }
   #hamburger {
     display: block;
     color: white;
@@ -362,10 +369,8 @@
     }
 
     .Idea-image {
-      width: 100%;
-      height: 50vh;
-      object-fit: cover;
-      object-position: center;
+      height: 30vh;
+      border-radius: 5%;
     }
 
     .benefit-city {
